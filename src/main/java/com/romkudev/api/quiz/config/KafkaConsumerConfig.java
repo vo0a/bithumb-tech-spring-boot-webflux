@@ -1,8 +1,8 @@
 package com.romkudev.api.quiz.config;
 
-import lombok.Value;
 import org.apache.kafka.clients.consumer.ConsumerConfig;
 import org.apache.kafka.common.serialization.StringDeserializer;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.kafka.config.ConcurrentKafkaListenerContainerFactory;
@@ -15,9 +15,9 @@ import java.util.Map;
 @Configuration
 public class KafkaConsumerConfig {
 
-    @Value("${kafka.bootstrap-servers}")
+    @Value("${spring.kafka.consumer.bootstrap-servers}")
     private String bootStrapAddress;
-    @Value("${kafka.consumer.group-id}")
+    @Value("${spring.kafka.consumer.group-id}")
     private String groupId;
 
     @Bean

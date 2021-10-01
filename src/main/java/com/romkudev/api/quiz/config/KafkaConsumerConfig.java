@@ -1,5 +1,5 @@
 package com.romkudev.api.quiz.config;
-
+/*
 import org.apache.kafka.clients.consumer.ConsumerConfig;
 import org.apache.kafka.common.serialization.StringDeserializer;
 import org.springframework.beans.factory.annotation.Value;
@@ -38,3 +38,4 @@ public class KafkaConsumerConfig {
         return factory;
     }
 }
+ */

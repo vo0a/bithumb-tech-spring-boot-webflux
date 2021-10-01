@@ -9,11 +9,11 @@ import org.springframework.data.mongodb.core.mapping.Document;
 
 import java.io.Serializable;
 
+@Document(collection = "attempts")
 @Getter
 @ToString
 @RequiredArgsConstructor
 @EqualsAndHashCode
-@Document(collection = "attempts")
 public class Attempt implements Serializable {
 
     @Id
